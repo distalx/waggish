@@ -1,5 +1,7 @@
-var uniqueRandomArray = require ('unique-random-array');
-var loadingMessages = require ('./loading-messages.json');
+import uniqueRandomArray from 'unique-random-array';
+import loadingMessages from './loading-messages.json';
+
+
 var getRandomItem = uniqueRandomArray(loadingMessages);
 
 module.exports = {

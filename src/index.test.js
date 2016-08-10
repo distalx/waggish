@@ -1,5 +1,5 @@
-var expect = require ('chai').expect;
-var waggish = require ('./index.js');
+import { expect } from 'chai';
+import waggish from './index.js';
 
 describe('loading-messages',function(){
 
@@ -33,7 +33,7 @@ describe('loading-messages',function(){
         expect(waggish.all).to.include(item);
       });
     });
-    
+
   });
 
 
