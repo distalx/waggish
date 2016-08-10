@@ -20,11 +20,20 @@ describe('loading-messages',function(){
 
   describe('random',function(){
     it('should return a random item from waggish.all',function(){
-      
+
       var randomItem = waggish.random();
       expect(waggish.all).to.include(randomItem);
 
     });
+
+    it('should return an array of random items if passed a number', function() {
+      var randomItems = waggish.random(4);
+      expect(randomItems).to.have.length(4);
+      randomItems.forEach(function(item) {
+        expect(waggish.all).to.include(item);
+      });
+    });
+    
   });
 
 
