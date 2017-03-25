@@ -57,7 +57,7 @@
     "nyc": "10.1.2",
     "rimraf": "2.6.1",
     "semantic-release": "^4.3.5",
-    "webpack": "1.13.3"
+    "webpack": "2.2.1"
   },
   "config": {
     "ghooks": {
